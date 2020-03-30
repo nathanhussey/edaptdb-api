@@ -9,7 +9,7 @@ export const connect = () => {
         console.log("db connected");
       }
       if (err) {
-        console.log(err);
+        console.log("not connected");
       }
     }
   );
