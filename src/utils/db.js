@@ -6,6 +6,7 @@ export const connect = () => {
     { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
     (err) => {
       if (err) {
+        console.log(err);
         throw err;
       }
     }
