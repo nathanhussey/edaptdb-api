@@ -6,10 +6,7 @@ export const postSurvey = async (req, res) => {
   });
   try {
     const saveSurvey = await survey.save();
-    res
-      .status(200)
-      .header("Access-Control-Allow-Origin", "*")
-      .json({ message: "success" });
+    res.status(200).json({ message: "success" });
   } catch {
     res.send(err);
   }
