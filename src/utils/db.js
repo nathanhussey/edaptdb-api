@@ -6,7 +6,7 @@ export const connect = () => {
     { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
     (err, db) => {
       if (db) {
-        console.log(db);
+        console.log("db connected");
       }
       if (err) {
         console.log(err);
