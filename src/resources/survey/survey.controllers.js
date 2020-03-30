@@ -6,6 +6,7 @@ export const postSurvey = async (req, res) => {
   });
   try {
     const saveSurvey = await survey.save();
+    console.log(1);
     res.status(200).json({ message: "success" });
   } catch {
     res.send(err);
