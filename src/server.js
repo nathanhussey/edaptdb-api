@@ -17,6 +17,9 @@ app.use(json());
 app.use(urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
+app.get("/", (req, res) => {
+  res.send("app is running");
+});
 app.use("/survey", surveyRouter);
 
 export const start = async () => {
