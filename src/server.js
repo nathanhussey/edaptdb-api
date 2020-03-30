@@ -24,7 +24,7 @@ app.use("/survey", surveyRouter);
 export const start = async () => {
   try {
     await connect();
-    app.listen(3001, () => {
+    app.listen(process.env.PORT || 3001, () => {
       console.log(`REST API on http://localhost:3001`);
     });
   } catch (e) {
